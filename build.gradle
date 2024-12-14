@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Kafka-Clients für die Kommunikation
+    implementation 'org.apache.kafka:kafka-clients:3.5.1'
+
+    // Jakarta XML Binding (JAXB) für XML-Serialisierung und Deserialisierung
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:3.0.1'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:3.0.1'
+
+    // Jackson Core und Databind für JSON-Serialisierung/Deserialisierung
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.2'
+
+    // Optional: Jackson-Module für Java 8 Features (z.B. LocalDate)
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2'
+
+
+    // JUnit (falls Tests benötigt werden)
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+java {
+    toolchain {
+        //languageVersion.set(JavaLanguageVersion.of(17)) // Falls Java 17 verwendet wird, anpassen nach Bedarf
+    }
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
