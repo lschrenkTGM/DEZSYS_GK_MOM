@@ -76,3 +76,10 @@ Der Consumer wurde in der Klasse ZentralConsumer umgesetzt. Diese Klasse empfän
 
 ## Ergebnisse
 ![img.png](img.png)
+
+## Quellen
+- Apache Kafka: https://kafka.apache.org/
+- IBM - Message Oriented Middleware: https://www.ibm.com/cloud/what-is-message-oriented-middleware
+- Confluent - What is Apache Kafka?: https://www.confluent.io/what-is-apache-kafka/
+- Red Hat - Message-Oriented Middleware: https://www.redhat.com/en/topics/integration/what-is-message-oriented-middleware
+- Kafka Documentation - Messaging Systems: https://kafka.apache.org/documentation/
